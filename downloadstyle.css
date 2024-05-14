@@ -1,0 +1,201 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Set the background color of the body, visible on the sidebars */
+}
+
+/* Main content styles */
+.main-content {
+    margin-left: 100px; /* Same as the Leftbar width */
+    margin-right: 100px; /* Same as the Rightbar width */
+    padding: 20px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    min-height: 100vh; /* Full viewport height */
+    background-color: #fff; /* Background color for the content */
+   
+}
+.page {
+    margin-top: 100px; /* Adjust the value as needed */
+    margin-bottom: 100px; /* Adjust the value as needed */
+}
+
+#PageTwo
+{
+    display: block;
+    text-align: center;
+
+}
+#PageThree
+{
+    display: block;
+    text-align: center;
+
+}
+#PageFour
+{
+    display: block;
+    text-align: center;
+
+}
+#PageFive
+{
+    display: block;
+    text-align: center;
+
+}
+
+
+.value-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px; /* Space between each item */
+}
+
+
+.number-circle {
+    margin-right: 10px; /* Space between the image and the text */
+    margin-left: 10px;
+}
+
+.number-circle img {
+    display: block;
+    width: 50px; /* Adjust if your images are a different size */
+    height: 50px; /* Adjust if your images are a different size */
+}
+
+.text-content {
+    
+    background: #ffffff;
+    border: 3px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    width: 50%; /* Take the remaining width */
+    text-align: left;
+}
+
+
+
+.e-quote-box {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 50px; /* Space from the top */
+    margin-bottom: 50px; /* Space from the bottom */
+    height: 200px;
+    
+}
+.CheckLB {
+    display: flex;
+    background: #ffffff; /* Light grey background for the div */
+    border: 3px solid #ccc; /* Solid border for the div */
+    padding: 20px; /* Padding inside the div */
+    font-size: 20px; /* Font size for the text */
+    
+    text-align: left;/* Center the text */
+    position: relative; /* Position relative for absolute positioned pseudo-elements */
+    margin: 0; /* Override default margins for paragraph */
+    width: 800px;
+    height: 400px;
+    
+}
+
+.e-quote-text {
+    background: #ffffff; /* Light grey background for the div */
+    border: 3px solid #ccc; /* Solid border for the div */
+    padding: 20px; /* Padding inside the div */
+    font-size: 20px; /* Font size for the text */
+    
+    text-align: left;/* Center the text */
+    position: relative; /* Position relative for absolute positioned pseudo-elements */
+    margin: 0; /* Override default margins for paragraph */
+    width: 800px;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+img {
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+/* Footer styles */
+/* Footer styling */
+.footer {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Align the buttons vertically */
+    padding: 20px; /* Add padding for spacing around the footer */
+}
+
+/* Header styles */
+header {
+    text-align: center;
+}
+
+/* Logo styles */
+#logo {
+    margin-top: 20px;
+}
+
+/* Button styles */
+button {
+   
+    margin: 0 5px; /* Space between buttons */
+    padding: 5px 10px; /* Padding inside the buttons, increases height and ensures text fits */
+    font-size: 1.5rem; /* Adjustable font size */
+    font-weight: bold;
+    border: 10px solid;
+
+    background-color: #3498db; /* Example blue background */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer; /* Mouse cursor changes to pointer when hovering over the button */
+    transition: all 0.3s; /* Smooth transition for button press effect */
+}
+
+button:active {
+    box-shadow: 0 2px #2874a6; /* Shadow adjustment for when button is pressed */
+    transform: translateY(2px); /* Slightly move the button down when pressed */
+}
+
+/* Horizontal line styles */
+hr {
+    margin: 10px 0;
+}
+
+/* Right sidebar styles */
+#Rightbar {
+    position: fixed;
+    width: 100px; /* Width of the right sidebar */
+    top: 0;
+    right: 0; /* Align to the right side */
+    bottom: 0;
+    background-color: #727478; /* Background color for the sidebar */
+}
+
+/* Left sidebar styles */
+#Leftbar {
+    position: fixed;
+    width: 100px; /* Width of the left sidebar */
+    top: 0;
+    left: 0; /* Align to the left side */
+    bottom: 0;
+    background-color: #727478; /* Background color for the sidebar */
+}

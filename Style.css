@@ -1,0 +1,678 @@
+/* Reset and widths */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Sidebar styles */
+#sidebar {
+    position: fixed;
+    width: 100px; /* Adjust as needed */
+    top: 0;
+    bottom: 0;
+    background-color: #2055A6; /* Adjust as needed */
+}
+
+/* Main content should start to the right of the sidebar */
+main {
+    margin-left: 100px; /* Same as the width of the sidebar */
+}
+
+/* Logo styles */
+#logo {
+    width: 300px;
+    height: auto;
+    display: block; /* Centers the logo if needed */
+    margin: 0 auto;
+}
+
+/* Footer styles */
+footer {
+   
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2055A6; /* Dark blue background */
+    color: white; /* Text color */
+    padding: 5px 0; /* Adjust as needed */
+    display: grid;
+    grid-template-rows: auto auto auto; /* Three rows: links, icons, legal text */
+    justify-items: center; /* Center content horizontally */
+    align-content: center; /* Center content vertically */
+}
+
+/* Navigation links */
+.footer-nav {
+    display: flex;
+    justify-content: center; /* Center the links */
+    margin-bottom: 10px; /* Space below the links */
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 10px; /* Space between the links */
+}
+
+.footer-nav a:hover {
+    color: #CCCCCC;
+}
+
+/* Social icons */
+.footer-icons {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    margin-bottom: 10px; /* Space below the icons */
+}
+
+.footer-icons a {
+    margin: 0 10px; /* Space between the icons */
+}
+
+.footer-icons img {
+    width: 30px; /* Adjust as needed */
+    height: auto;
+}
+
+/* Legal text */
+.footer-bottom-text {
+    text-align: center;
+    font-size: small; /* Adjust as needed */
+}
+
+.footer-bottom-text a {
+    text-decoration: none;
+    color: white;
+    margin: 0 5px; /* Space between the policy links */
+}
+
+.footer-bottom-text a:hover {
+    text-decoration: none;
+}
+
+.content-section
+{
+   display: flex;
+  margin-left: 50px;
+  font-size: medium;
+  font-family: 'Times New Roman', Times, serif;
+  justify-content: center;
+
+}
+#section1
+{    margin-bottom: 100px;
+    
+}
+
+
+
+
+
+.Web-section
+{  
+    display: flex;
+    margin-left: 50px;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    margin-bottom: 100px;
+    
+  
+}
+
+.MainBox
+{  
+    position: relative; 
+   border: 2px solid;
+    margin-right: 30px;
+   width: 50vw;
+   height: 80vh;
+     
+}
+
+
+
+.Box
+{  
+    position: absolute;
+    margin-left: 15%;
+    border: 2px solid;
+    top: 5%;
+    left: 10%;
+    width: 8vw;
+    height: 6vh;
+    font-size: 20;
+    font-family: sans-serif;
+    text-align: center;
+
+   
+    padding: 4px;
+}
+#CompanyStructure, #Contacts {
+    display: none; /* Initially hidden */
+    position: absolute;
+    margin-left: 1%;
+    border: 2px solid;
+    top: 15%;
+    left: 10%;
+    width: 8vw;
+    height: 6vh;
+    font-size: 20;
+    font-family: sans-serif;
+    text-align: center;
+
+   
+    padding: 4px;
+}
+
+#CompanyStructure {
+    text-align: top;
+    background-color: rgba(120, 195, 233, 0.50); 
+    color: #000000; /* Black text, fully opaque */
+    top: 15%; /* Adjust based on 'Welcome' button's position and height */
+    left: 4%; /* Align with the 'Welcome' button horizontally */
+   
+}
+
+#Contacts {
+     
+    background-color: rgba(120, 195, 233,0.50); 
+    color: #000000; /* Black text, fully opaque */
+    top: 15%; /* Below 'MissionNValues', adjust based on its height */
+    left: 36%; /* Align with the 'MissionNValues' button horizontally */
+}
+
+/* Adjust the top property based on your layout needs */
+
+
+
+.oBox
+{
+    position: absolute;
+    bottom: 3%;
+    margin-right: 40v;
+    font-size: 20;
+    font-family: sans-serif;
+    text-align: center;
+    width: 8vw;
+    height: 6vh;
+    border: 3px solid;
+}
+
+#Welcome
+{     display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Ensures text is centered if it wraps to multiple lines */
+    /* Other styles remain unchanged */
+
+     background-color: rgba(120, 195, 233, 0.99); 
+    color: #000000; /* Black text, fully opaque */
+    top: 3vh; /* Adjust as needed */
+  left: -5vw; /* Adjust to position at the top left */
+
+}
+
+#MissionNValues
+{    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Ensures text is centered if it wraps to multiple lines */
+    /* Other styles remain unchanged */
+
+    background-color: rgba(120, 195, 233, 0.50); /* #78C3E9 with 50% opacity */
+    color: #000000; /* Black text, fully opaque */
+    top: 3vh; /* Adjust if necessary */
+    left: 11vw; /* Adjust to center or close to center, may need fine-tuning */
+   
+   
+}
+
+#FirstWeek
+{    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Ensures text is centered if it wraps to multiple lines */
+    /* Other styles remain unchanged */
+
+    background-color: rgba(120, 195, 233, 0.50); /* #78C3E9 with 50% opacity */
+    color: #000000; /* Black text, fully opaque */
+    top: 3vh; /* Adjust for top alignment */
+    left: 27vw; /* Adjust to position at the top right */
+   
+    
+     /* Further spaced out from the second box */
+    
+
+}
+
+.arrow
+{   position: absolute;
+     
+    top: 0vh;
+    right: 0vw; /* Top right corner of MainBox */
+
+
+}
+
+#Previousbtn
+{
+   
+    background-color: rgba(120, 195, 233, 0.50); /* #78C3E9 with 50% opacity */
+    color: #000000; /* Black text, fully opaque */
+     bottom: 0.2;
+     left: 60%;
+   
+}
+
+#Nextbtn
+{
+   
+    background-color: rgba(120, 195, 233); 
+    color: #000000; /* Black text, fully opaque */
+    bottom: 0.2;
+     right:  5%;
+
+     
+}
+
+
+
+.arrow img 
+{
+   
+    width:  50px;
+   height: 50px;
+   
+}
+
+
+#Previousbtn, #Nextbtn, #Welcome, #MissionNValues, #FirstWeek, #Contacts, #CompanyStructure {
+    cursor: pointer; /* Change cursor to indicate clickable */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    border: 1px thin;
+}
+
+#Previousbtn:hover, #Nextbtn:hover, #Welcome:hover, #MissionNValues:hover, #FirstWeek:hover  {
+    background-color: rgba(120, 195, 233, 0.75); /* Darker or different color on hover */
+}
+
+/* First layout */
+.Layout1
+{    
+    display: none;/* Switch to block when ready to show */
+}
+/*Start of layout one classes */
+
+
+/* Start of company name*/
+.CompanyName
+{   display: block;
+    position: absolute;
+    
+    top: 25vh;
+    left:5vw;
+}
+
+#Ctext
+{   
+    display: block;
+    font-size: 5;
+    font-weight: 100;
+    font-family: sans-serif;
+
+   
+}
+
+#Cfield
+
+{
+    display: block;
+    border: 1px thin;
+  
+    
+    text-align: center;
+    font-size: larger;
+    font-weight: 800;
+    width: 20vw;
+    height: 10vh;
+    
+}
+
+/* end of company name section */
+
+/* Start of C image Section */
+.CImageSection
+{     display: block;
+      position: absolute;
+    
+      top: 25vh;
+      left: 30vw;
+  
+   
+  
+    
+}
+
+#CText
+{    font-size:     10;
+   
+    font-family: sans-serif;
+    font-weight: 300;
+    
+}
+.CImageSection img
+{    
+   
+   position: absolute;
+   right: 7vw;
+    width: 5vw;
+    height: auto;
+}
+
+/* End of C image Sec */
+
+/* Start of brief description section */
+
+.BriefDescriptionSec
+{  justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Ensures text is centered if it wraps to multiple lines */
+    /* Other styles remain unchanged */
+    position: absolute;
+    text-align: center;
+    
+    display: block;
+   position: absolute;
+   bottom: 30vh;
+   left: 4vw;
+  
+     
+}
+
+#Dtext
+ { 
+    
+    
+   
+   font-size: 40;
+   font-weight: bold;
+   font-family: 'Times New Roman', Times, serif;
+   
+}
+
+#Dfield
+{    
+    position: absolute;
+   
+    border: 1px thin;
+    width: 38vw;
+    height: 15vh;
+    
+    
+    font-size: 40;
+    font-family: sans-serif;
+   
+
+}
+/* End of layout 1
+
+
+/* Start of layout 2 */
+
+.Layout2
+{
+   display: none;
+}
+
+/* Instructions  */ 
+.Instructions
+{     display: block;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Ensures text is centered if it wraps to multiple lines */
+    /* Other styles remain unchanged */
+    position: absolute;
+    text-align: center;
+    height: 10vh;
+    width: 50vw;
+  
+    top: 10vh;
+    left:0vw;
+    border: none;
+    
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-bottom: 30px;
+    
+}
+
+
+/* Start of company mission section */
+
+.CompanyMission
+{
+    display: block;
+    position: absolute;
+    
+    top: 20vh;
+    left: 5vw;
+   
+  
+
+}
+
+#CMtext
+{  
+    font-size: 20;
+    font-weight: 100;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+#CMfield
+{
+    display: block;
+    border: 1px thin;
+  
+    
+    text-align: center;
+    font-size: larger;
+    font-weight: 800;
+    width: 22vw;
+    height: 10vh;
+   
+  
+}
+
+/* end of company mission section */
+
+
+/* Start of employee quote section */
+
+.EmployeeQuote
+{
+    display: block;
+      position: absolute;
+      font-size: calc(7px + 0.5vw); /* Adjust base size and scaling factor as needed */
+      top: 24vh;
+      right:3vw;
+      font-weight: 100;
+      font-family: sans-serif;
+      
+}
+
+
+
+#Efield
+{  
+    display: block;
+    border: 1px thin;
+  
+    
+    text-align: center;
+    font-size: larger;
+    font-weight: 400;
+    width: 15vw;
+    height: 5vh;
+
+
+  
+    
+}
+
+/* End of employee quote */
+
+/* Start of employee value section */
+
+.EmployeeValueSection
+{
+    display: block;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Ensures text is centered if it wraps to multiple lines */
+    /* Other styles remain unchanged */
+    position: absolute;
+    text-align: center;
+    height: 10vh;
+    width: 30vw;
+  
+    bottom: 30vh;
+    left:10vw;
+   
+    
+    font-size: 15px;
+    font-family: sans-serif;
+
+}
+
+
+
+#EVfield1
+{   
+   
+   
+    border: 0px thin;
+   
+    text-align: center;
+    box-sizing: border-box; /* Includes padding and border in the element's total width */
+
+}
+
+#EVfield2
+{
+  
+    border: 1px thin;
+  text-align: center;
+  box-sizing: border-box; /* Includes padding and border in the element's total width */
+   
+}
+
+#EVfield3 
+{   
+  
+    border: 1px thin;
+  text-align: center;
+  box-sizing: border-box;
+   
+}
+
+/* End of employee value section */
+
+/* End of layout 2 */
+
+
+/* Start of layout 3 */
+
+.Layout3
+{
+    
+ display: block;
+ text-align: center;
+
+
+}
+
+/* Layout 3 top text with list below */
+
+#Toptxt
+{   
+      position: absolute;
+     top: 15vh;
+     left: 2vw;
+      
+    font-family: sans-serif;
+    justify-content: left;
+    text-align: left;
+  
+}
+
+#Bottomtxt
+{
+   
+  height: 15vh;
+  width:30vw;
+
+}
+ul
+{
+  margin-left: 10vw;
+}
+
+li
+{
+    margin-right: 10vw;
+}
+#ForEtxt
+{   
+    margin-right: 0vw;
+
+}
+/* Layout 3 main field to enter info */
+
+#Topfield
+{
+    display: block;
+  position: absolute;
+
+  
+  border: 0px thin;
+  bottom: 20vh;
+  left:5vw;
+ 
+   
+  height: 15vh;
+  width: 40vw;
+  
+  font-size: 15;
+  font-family: sans-serif;
+ 
+
+
+
+}
+
+/* Input Fields and text areas to take input style */
+input[type="text"], textarea {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box; /* Crucial for including padding and border in the element's size */
+    resize: none; /* Prevents resizing for textarea */
+    border: 3px solid;
+
+
+}
+
+input[type="file"] {
+    cursor: pointer;
+}
+
+.Paperclip
+{  
+    cursor: pointer;
+}

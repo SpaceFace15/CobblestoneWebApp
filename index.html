@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cobblestone Web APP</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header> 
+      <hr>
+      <img src="CobblestoneLogo.png" alt="Cobblestone Consulting" id="logo">
+        <hr>
+    </header>
+
+    <div id="sidebar">
+        <!-- Sidebar content here -->
+   
+      </div>
+
+    <main>
+        <div class="content-section" id="section1">
+           
+          <!-- Content for section 1 -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim eros eget elit lacinia, sed vehicula mauris congue. Donec varius nisi diam, a pellentesque elit facilisis id. Nulla id ullamcorper felis. Vestibulum leo nisl, hendrerit sit amet orci eu, aliquam lobortis urna. Donec dictum, erat vel mattis ultricies, odio ligula porttitor nulla, bibendum ornare purus dolor sed metus. Nulla scelerisque elementum metus blandit tincidunt. Aenean dolor nibh, eleifend vitae feugiat id, semper eget nisl. Vestibulum lobortis, ipsum quis sagittis sollicitudin, magna est suscipit mauris, ac venenatis diam nisi nec nisl.
+
+            Vestibulum consectetur a massa sed iaculis. Donec ultricies dapibus condimentum. Nam magna nunc, porta euismod sodales vel, tincidunt at elit. Nam vitae ex in leo volutpat molestie. Quisque vitae lectus sed justo vulputate mattis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus molestie cursus mi a auctor. Phasellus lorem augue, convallis eget aliquet vel, sagittis a tellus. Integer at pulvinar lorem.</p>
+       
+          </div>
+       
+          <!-- end of content section-->
+      <div class = "Web-section" id ="Final Section">
+       
+        
+        <div class = "MainBox" id ="Headbox">
+          <a href="#" class="arrow" id="FirstArrow" onclick="event.preventDefault();"><img src="DownArrow.png" alt="arrow"></a>
+
+
+        <div class="Box" id ="Welcome">
+          <p> Welcome</p>
+
+        </div>
+        <!-- end of box 1-->
+
+        <div class="Box" id ="MissionNValues">
+          <p> Mission and Values</p>
+        </div>
+        <!-- end of  box2-->
+        <div class="Box" id ="FirstWeek">
+          <p> First Week Checklist</p>
+        </div>
+        <!-- end of box3-->
+        
+        <!-- Start of bottom top buttons -->
+        <div class ="oBox" id = "Previousbtn">
+              <p> Previous </p>
+        </div>
+      
+         <!-- New hidden buttons -->
+    <div class="Extra" id="CompanyStructure">
+      <p>Company Structure</p>
+    </div>
+    <div class="Extra" id="Contacts">
+      <p>Contacts</p>
+    </div>
+
+
+        <button id="autofillBtn">AutoFill Data</button>
+
+        <div class ="oBox" id = "Nextbtn">
+          <p> Next </p>
+        </div>
+        <!--End of the top bottom buttons-->
+
+
+        <!-- Start of layouts-->
+
+        <!-- First Layout-->
+        <div class = "Layout1" id = "FLay">
+        
+        <div class = "Instructions" > 
+         
+          <p> Instructions </p>
+        </div>
+
+        <!-- End of instructions-->
+
+        <!-- Start of company name section-->
+      <div class = "CompanyName"> 
+      
+      <!-- Start of company text-->
+      <div class = "Companytxt" id = "Ctext" >
+        <p> What is the name of your company? </p>
+      </div>  
+       <!-- End of company text-->
+
+       <!-- Start of company field box-->
+       <div class = "CompanyField" id = "Cfield">
+        
+        <input type="text" placeholder="Company Name Here" name="companyName">
+       </div>
+       <!--End of company field box-->
+    
+    
+      </div>
+    <!-- End of company name section -->
+      
+      <!-- Start of CEO Image Section-->
+
+      <!-- Modified CEO Image Upload Section -->
+<div class="CImageSection">
+  <div class="CeoText" id="CText">
+      <p>Upload CEO Image Here</p>
+  </div>
+  <input type="file" id="imageUpload" accept="image/png, image/jpeg" style="display:none;" onchange="handleImageUpload(event)">
+  <label for="imageUpload" class="Paperclip" id="clip"><img src="PaperClip.png" alt="Upload Here"></label>
+</div>
+
+      <!-- End of CEO image section-->
+  
+      <!-- Start of Brief Description Section-->
+      <div class = "BriefDescriptionSec" id = "Brief">
+
+        <!-- Start of D text -->
+        <div class = "DescriptionText" id = "Dtext">
+             <p>  Write a brief description of your company</p>
+           
+        </div>
+        <!--  End of D text -->
+
+
+        <!-- Start of D Field -->
+        <div class = "DescriptionField" id = "Dfield">
+
+          <textarea placeholder="Write a brief description of your company"></textarea>
+        </div>
+<!-- End  of D Field -->
+     
+
+
+
+
+         </div> 
+      <!-- End of Brief Description -->
+
+    </div>
+      <!-- end of first layout-->
+
+
+
+
+
+      <!--Second Layout-->
+    <div class = "Layout2" id = "SLay">
+      
+      <div class = "Instructions"> 
+        <p>Instructions</p>
+   
+      </div>
+  
+
+ <!-- Start of company Mission section-->
+ <div class = "CompanyMission"> 
+      
+  <!-- Start of company text-->
+  <div class = "CompanyMtxt" id = "CMtext" >
+    <p>What is your company's mission?</p>
+  </div>  
+   <!-- End of company text-->
+
+   <!-- Start of company field box-->
+   <div class = "CompanyMField" id = "CMfield">
+    <textarea placeholder="Write your company mission here"></textarea> 
+   </div>
+   <!--End of company field box-->
+
+
+  </div>
+<!-- End of company Mission section -->
+
+<!-- Start of employee quote section-->
+  <div class = "EmployeeQuote">
+
+       <!--start of Employee text-->
+      <div class = "EmployeeTxt" id="Etxt">
+        <p>Place employee quote in field below</p>
+      </div>
+         
+      <!--End of employee text-->
+
+
+      <!-- Start of employee field-->
+     <div class ="EmployeeField" id = "Efield">
+
+       <input type="text" placeholder="Employee Quote Here" name="employeeQuote">
+     </div>
+     <!--End of employee field-->
+
+  </div>
+  <!-- End of employee quote sectino-->
+
+  <!-- Start of employee values section-->
+  <div class ="EmployeeValueSection" >
+
+    <!-- start of employee value txt-->
+   <div class ="EmployeeValueTxt" id ="Evaluetxt">
+      <p>Enter some Values that Represent your Company in the Following Fields</p>
+   </div>
+<!-- end of employee value text-->
+
+<!-- Start of the three fields for entering values-->
+
+<div class = "EmployeeValueField" id = "EVfield1">
+  <input type="text" placeholder="Value 1" name="FValue">
+</div>
+<!-- End of field 1-->
+
+<div class = "EmployeeValueField" id = "EVfield2">
+  <input type="text" placeholder="Value 2" name="SValue">
+</div>
+<!-- End of field 2-->
+
+<div class = "EmployeeValueField" id = "EVfield3">
+  <input type="text" placeholder="Value 3" name="TValue">
+</div>
+<!-- End of field 3-->
+<div class = "EmployeeValueField" id = "EVfield4">
+  <input type="text" placeholder="Value 4" name="FoValue">
+</div>
+<!-- End of field 4-->
+<div class = "EmployeeValueField" id = "EVfield5">
+  <input type="text" placeholder="Value 5" name="FiValue">
+</div>
+<!-- End of field 5-->
+
+
+<!-- End of employee value fields-->
+
+  </div>
+<!--End of employee value section-->
+  
+  </div>
+  <!-- End of second layout-->
+
+
+
+
+
+  <!-- Third Layout-->
+<div class = "Layout3" id = "TLay">
+      
+   <div class = "Layout3TopTxt" id = "Toptxt">
+      <p>Next, list each item your new employee should complete during their first week. <br> Do this in a comma seperated format. Some ideas are prepopulated in the fields below <br> Do not include the double quotes, periods at the end of list are optional.</p>
+    <!-- Start of the list -->
+    <br>
+    <br>
+       <p><span style = "font-weight: 200;" id = "ForEtxt">For Example: "Complete paperwork, get online security tools, Enroll in benefits portal" </span></p>
+         
+    <br>
+  <!--End of the list -->
+ 
+</div>
+   
+ 
+   
+   <div class = "Layout3MainField" id ="Topfield">
+    <textarea name="LayoutText"  placeholder="Complete legally required paperwork, Payroll Setup, Computer and Phone Setup" maxlength="1000"></textarea>
+    
+   </div>
+
+
+
+</div>
+<!-- end of third layout-->
+  
+</div>
+<!-- end of main box-->
+
+  </div> <!-- End of web section-->
+      
+    </main>
+    <!-- End of main content section -->
+  
+
+    <!-- start of footer-->
+<footer>
+  <div class="textcontain">
+    <!-- All text-->
+    <nav class="footer-nav">
+      <a href="#" class="text">About</a>
+      <a href="#" class="text">Expertise</a>
+      <a href="#" class="text">Our Work</a>
+      <a href="#" class="text">Industries</a>
+      <a href="#" class="text">Resources</a>
+      <a href="#" class="text">More</a>
+    </nav>
+    
+    <!-- Icons here-->
+    <div class="footer-icons">
+     
+      <a href="#" class="icon-link"><img src="In.png" alt="LinkedIn"></a>
+      <a href="#" class="icon-link"><img src="Face.png" alt="Facebook"></a>
+      <a href="#" class="icon-link"><img src="yt.png" alt="YouTube"></a>
+      <a href="#" class="icon-link"><img src="snap.png" alt="Instagram"></a>
+      <a href="#" class="icon-link"><img src="twitter.png" alt="Twitter"></a>
+    </div>
+
+   
+    
+    <div class="footer-bottom-text">
+      <p>© 2023 Cobblestone Consulting Inc. All rights reserved.</p>
+      <a href="privacy-policy-link" class="policy">Privacy Policy</a> | 
+      <a href="terms-and-conditions-link" class="policy">Terms & Conditions</a>
+    </div>
+  </div>
+
+  
+</footer>
+<!-- end of footer-->
+
+<!-- start of scripts-->
+    <script src="WebFunc.js"></script>
+   
+</body>
+</html>
